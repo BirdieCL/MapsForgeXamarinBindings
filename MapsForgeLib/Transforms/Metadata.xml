@@ -1,0 +1,25 @@
+<metadata>
+  <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+  <attr
+    path="/api/package[@name='org.mapsforge.map.layer.tilestore']/class[@name='TileStoreLayer']/method[@name='createJob' and count(parameter)=1 and parameter[1][@type='org.mapsforge.core.model.Tile']]"
+    name="managedReturn">
+    Java.Lang.Object
+  </attr>
+  <attr path="/api/package[@name='org.mapsforge.map.rendertheme.renderinstruction']/class[@name='RenderInstruction']" name="managedName">RenderInstructionClass</attr>
+  <attr path="/api/package[@name='org.mapsforge.map.model']/class[@name='Model']" name="managedName">ModelClass</attr>
+  <attr path="/api/package[@name='org.mapsforge.map.layer']/class[@name='Layer']" name="managedName">LayerClass</attr>
+  <attr
+    path="/api/package[@name='org.mapsforge.map.layer.renderer']/class[@name='TileRendererLayer']/method[@name='createJob' and count(parameter)=1 and parameter[1][@type='org.mapsforge.core.model.Tile']]"
+    name="managedReturn">
+    Java.Lang.Object
+  </attr>
+  <attr path="/api/package[@name='org.mapsforge.map.layer.download']/class[@name='TileDownloadLayer']/method[@name='createJob' and count(parameter)=1 and parameter[1][@type='org.mapsforge.core.model.Tile']]" name="managedReturn">
+    Java.Lang.Object
+  </attr>
+</metadata>
